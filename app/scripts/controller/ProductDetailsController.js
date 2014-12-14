@@ -5,6 +5,8 @@
         this.product = product;
     }
 
+    ProductDetailsController.$inject = ['product'];
+
     angular.module('auction')
-        .controller('ProductDetailsController', ['product', ProductDetailsController]);
-}())
+        .controller('ProductDetailsController', ProductDetailsController);
+}());
